@@ -13,6 +13,7 @@ class Map extends Component {
         this.state = {
             app_id: props.app_id,
             app_code: props.app_code,
+            useHTTPS: true,
             coords: {
                 lat: 0,
                 lng: 0
@@ -28,7 +29,7 @@ class Map extends Component {
             loading: true,
             zoom: props.zoom,
             map: null,
-            style: props.style,
+            style: props.style
         }
     }
 
